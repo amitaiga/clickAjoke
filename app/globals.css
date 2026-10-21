@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Design tokens from spec/DESIGN.md (Style Guide) */
+@theme {
+  --color-comic-yellow: #fbf801;
+  --color-ink: #37232d;
+  --color-comic-red: #d4283a;
+  --color-panel-purple: #402080; /* accent, reserved */
+  --color-sky-blue: #6fa8dc;
+  --color-peach: #f3dec5;
+  --color-desk-tan: #c79d6d; /* accent, reserved */
+  --color-warm-grey: #959083;
+  --color-placeholder-grey: #706b60;
+  --color-paper: #f5f5f5;
+  --color-white: #ffffff;
+
+  --radius-small: 8px;
+  --radius-control: 12px;
+  --radius-card: 20px;
+
+  --shadow-hard: 4px 4px 0 0 var(--color-ink);
+
+  --font-sans: var(--font-dejavu), Arial, sans-serif;
+}
+
+/* Typography scale (size / line-height) */
+@utility text-h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+@utility text-h2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+@utility text-body {
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+}
+@utility text-button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+@utility text-caption {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+body {
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  /* Paper background with a subtle dot grid (as in the mockup) */
+  background-color: var(--color-paper);
+  background-image: radial-gradient(#e4e4e4 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
